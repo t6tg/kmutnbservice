@@ -316,10 +316,12 @@ $name = $_SESSION['name'];
                             <table class="table table-hover">
                                 <tr>
                                     <th>Num.</th>
+                                    <th>Claim ID</th>
                                     <th>Serial Number</th>
                                     <th>Firstname</th>
                                     <th>Lastname</th>
                                     <th>status</th>
+                                    <th>Image</th>
                                     <th>Edit</th>
                                 </tr>
                                 <tbody id="geeks">
@@ -332,6 +334,7 @@ $name = $_SESSION['name'];
                                         <tr>
                                             <td><?php echo $num;
                                                         $num += 1; ?></td>
+                                            <td><?php echo $row_table['uniqe_id'] ?></td>
                                             <td><?php echo $row_table['serialnumber'] ?></td>
                                             <td><?php echo $row_table['fname'] ?></td>
                                             <td><?php echo $row_table['lname'] ?></td>
@@ -346,6 +349,29 @@ $name = $_SESSION['name'];
                                                         } else if ($row_table['status'] == '4') {
                                                             echo "การดำเนินการถูกยกเลิก";
                                                         } ?></td>
+                                            <td>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#<?php echo $row_table['serialnumber']; ?>">
+                                                    <i class="fa fa-image    "></i>
+                                                </button>
+                                                
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="<?php echo $row_table['serialnumber']; ?>" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">IMAGE SLIP</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <img style="width: 100%"src="../../main/fileuploaded/<?php echo $row_table['serialnumber']; ?>.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                             <td><a href="service.php?s=edit&val=<?php echo $row_table['serialnumber']; ?>" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
                                         </tr>
                                     <?php } ?>
@@ -399,7 +425,6 @@ $name = $_SESSION['name'];
 
 </html>
 <?php
-echo "<script>document.writeln(res);</script>";
 if ($_POST['submit-update']) {
     $serial = $_GET['val'];
     $status = $_POST['status'];
