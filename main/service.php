@@ -98,7 +98,9 @@
         sub = () => {
             if (confirm("ท่านต้องการแจ้งซ่อมใช่หรือไม่")) {
                 document.getElementById("myForm").submit();
-            };
+            }else{
+                return false;
+            }
         }
 
         function checkAvailability() {
