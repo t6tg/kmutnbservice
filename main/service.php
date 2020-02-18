@@ -80,9 +80,9 @@
                 </div><br>
             </div>
             <div class="form-group">
-                        <label for="">สาเหตุการเคลม : </label>
-                        <textarea type="text" class="form-control" name="note" aria-describedby="helpId" placeholder="Note .... " required></textarea>
-                    </div>
+                <label for="">สาเหตุการเคลม : </label>
+                <textarea type="text" class="form-control" name="note" aria-describedby="helpId" placeholder="Note .... " required></textarea>
+            </div>
             <center><button style="width:80%;background-color: purple;color:white" name="submit" class="btn btn">แจ้งซ่อม</button></center>
         </form>
     </div>
@@ -98,7 +98,7 @@
         sub = () => {
             if (confirm("ท่านต้องการแจ้งซ่อมใช่หรือไม่")) {
                 document.getElementById("myForm").submit();
-            }else{
+            } else {
                 return false;
             }
         }
