@@ -98,7 +98,11 @@
         sub = () => {
             if (confirm("ท่านต้องการแจ้งซ่อมใช่หรือไม่")) {
                 document.getElementById("myForm").submit();
+<<<<<<< HEAD
             } else {
+=======
+            }else{
+>>>>>>> 32f66c7ab2c3fc4ab0cce14f44151ea081d4d6be
                 return false;
             }
         }
