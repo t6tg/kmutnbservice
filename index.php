@@ -7,27 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Kanit:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=K2D:300,400,500,700&display=swap" rel="stylesheet">
     <style>
-        html,
-        body {
-            font-family: 'Kanit', sans-serif;
-            /* background-color: #e9e9e9 */
-        }
+    html,
+    body {
+        font-family: 'K2D', sans-serif;
+        /* background-color: #e9e9e9 */
+    }
 
-        .jumbotron {
-            background-image: url('./asset/img/regis-bg.jpg');
-            background-size: cover;
-        }
+    .jumbotron {
+        background-image: url('./asset/img/regis-bg.jpg');
+        background-size: cover;
+    }
 
-        .footer {
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: purple;
-            color: white;
-            text-align: center;
-        }
+    .footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: purple;
+        color: white;
+        text-align: center;
+    }
     </style>
 </head>
 
@@ -56,29 +56,32 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card" style="width: 18rem;"><br>
-                    <img src="./asset/img/service.jpg" style="width:65%;" class="card-img-top" alt="...">
+                        <img src="./asset/img/service.jpg" style="width:65%;" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">แจ้งซ่อมสินค้า</h5>
                             <p class="card-text">ลงทะเบียนเคลมหรือแจ้งซ่อมสินค้าและระบบของร้าน KMUTNBSERVICE</p>
-                            <a href="./main/service.php" class="btn btn" style="background-color:purple;color:white">แจ้งซ่อมสินค้า</a>
+                            <a href="./main/service.php" class="btn btn"
+                                style="background-color:purple;color:white">แจ้งซ่อมสินค้า</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card" style="width: 18rem;"><p><br>
-                        <img src="./asset/img/service2.jpg" style="width:60%;" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">ตรวจสอบสถานะ</h5>
-                            <p class="card-text">ตราขสอบสถานะการดำเนินการเคลมสินค้าในระบบ KMUTNBSERVICE</p>
-                                <a href="./main/check.php" class="btn btn" style="background-color:purple;color:white">ตรวจสอบสถานะแจ้งซ่อมสินค้า</a>
-                        </div>
+                    <div class="card" style="width: 18rem;">
+                        <p><br>
+                            <img src="./asset/img/service2.jpg" style="width:60%;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">ตรวจสอบสถานะ</h5>
+                                <p class="card-text">ตราขสอบสถานะการดำเนินการเคลมสินค้าในระบบ KMUTNBSERVICE</p>
+                                <a href="./main/check.php" class="btn btn"
+                                    style="background-color:purple;color:white">ตรวจสอบสถานะแจ้งซ่อมสินค้า</a>
+                            </div>
                     </div>
                 </div>
             </div>
         </center>
     </div><br><br>
-    <div style="margin-top: 30px;"class="footer"><br>
-        <span>&copy; Copyright <?php echo Date('Y')?> | KMUTNBSERVICE</span><br><br>
+    <div style="margin-top: 30px;" class="footer"><br>
+        <span>&copy; Copyright <?php echo Date('Y') ?> | KMUTNBSERVICE</span><br><br>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
