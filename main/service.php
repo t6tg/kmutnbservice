@@ -65,7 +65,7 @@
                     <div class="form-group">
                         <label for="">รหัสประจำเครื่อง ( Serial Number ) : </label>
                         <input type="text" class="form-control" name="serial" id="serial" placeholder="Serialnumber"
-                            onblur="checkAvailability()" required>
+                            onchange="checkAvailability()" required>
                         <p style="display:none" id="loaderIcon">Loading ....</p>
                     </div>
                 </div>
