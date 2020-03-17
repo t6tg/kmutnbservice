@@ -1,8 +1,8 @@
 <?php
-$host = "remotemysql.com:3306";
-$user = "GJ6WkWYTPy";
-$pass = "bvCZRE0Jdt";
-$dbname = "GJ6WkWYTPy";
+$host = "-";
+$user = "-";
+$pass = "-";
+$dbname = "-";
 $conn = new mysqli($host, $user, $pass, $dbname);
 mysqli_query($conn, "SET character_set_results=utf8");
 mysqli_set_charset($conn, "utf8");
