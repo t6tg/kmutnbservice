@@ -71,7 +71,7 @@
                             <img src="./asset/img/service2.jpg" style="width:60%;" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">ตรวจสอบสถานะ</h5>
-                                <p class="card-text">ตราขสอบสถานะการดำเนินการเคลมสินค้าในระบบ KMUTNBSERVICE</p>
+                                <p class="card-text">ตรวจสอบสถานะการดำเนินการเคลมสินค้าในระบบ KMUTNBSERVICE</p>
                                 <a href="./main/check.php" class="btn btn"
                                     style="background-color:purple;color:white">ตรวจสอบสถานะแจ้งซ่อมสินค้า</a>
                             </div>
